@@ -1,0 +1,5 @@
+.venv/
+data/
+uv.lock
+.gradio/
+**/*.json

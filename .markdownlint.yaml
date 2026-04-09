@@ -1,0 +1,6 @@
+# https://github.com/DavidAnson/markdownlint/blob/main/doc/Rules.md
+default: true
+MD013: false # line length
+MD041: false # first line must be H1 (README fragments, empty files)
+MD033: false # Inline HTML
+MD001: false # for larger paper link font size

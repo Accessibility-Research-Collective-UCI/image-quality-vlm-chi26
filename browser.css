@@ -1,0 +1,230 @@
+/* ── Visually hidden (screen-reader only) ── */
+.browser-sr-only {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  padding: 0;
+  margin: -1px;
+  overflow: hidden;
+  clip: rect(0, 0, 0, 0);
+  white-space: nowrap;
+  border: 0;
+}
+
+/* ── Data table ── */
+.browser table {
+  border-collapse: collapse;
+  width: max-content;
+}
+
+.browser th,
+.browser td {
+  border: 1px solid #ccc;
+  padding: 6px 8px;
+  vertical-align: top;
+  text-align: left;
+}
+
+.browser th {
+  background-color: #525251 !important;
+  color: #fff !important;
+  font-weight: 800;
+}
+
+.browser img {
+  max-width: 160px;
+  max-height: 160px;
+  object-fit: contain;
+  display: block;
+}
+
+.browser td strong {
+  font-weight: 700;
+}
+
+/* ── Thumbnail link ── */
+.browser-thumb-link {
+  cursor: pointer;
+  display: inline-block;
+  line-height: 0;
+}
+
+.browser-thumb-link:focus {
+  outline: 2px solid #3b82f6;
+  outline-offset: 2px;
+}
+
+.browser-thumb-link:focus:not(:focus-visible) {
+  outline: none;
+}
+
+/* ── Lightbox overlay ── */
+.browser-lightbox {
+  display: none;
+  position: fixed;
+  inset: 0;
+  z-index: 99999;
+  align-items: center;
+  justify-content: center;
+  box-sizing: border-box;
+  padding: 2rem;
+}
+
+.browser-lightbox:target {
+  display: flex;
+}
+
+.browser-lightbox-backdrop {
+  position: absolute;
+  inset: 0;
+  z-index: 0;
+  background: rgb(0 0 0 / 85%);
+}
+
+.browser-lightbox-body {
+  position: relative;
+  z-index: 1;
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  max-height: 95vh;
+  overflow-y: auto;
+  padding: 0 0.25rem;
+}
+
+.browser-lightbox-stack {
+  display: table;
+  table-layout: auto;
+  width: auto;
+  max-width: 95vw;
+  border-collapse: collapse;
+}
+
+.browser-lightbox-stack-img {
+  display: table-row;
+}
+
+.browser-lightbox-stack-img > div {
+  display: table-cell;
+  text-align: center;
+  vertical-align: middle;
+}
+
+.browser-lightbox-stack-img img {
+  display: block;
+  margin: 0 auto;
+  max-width: 95vw;
+  max-height: min(70vh, 95vh);
+  width: auto;
+  height: auto;
+  object-fit: contain;
+}
+
+.browser-lightbox-stack-meta {
+  display: table-row;
+}
+
+.browser-lightbox-stack-meta > div {
+  display: table-cell;
+  vertical-align: top;
+  padding-top: 0.75rem;
+  text-align: center;
+  color: #e5e7eb;
+  font-size: 1.5rem;
+  line-height: 1.5;
+  max-width: 0;
+  width: 100%;
+  box-sizing: border-box;
+  overflow-wrap: break-word;
+  word-wrap: break-word;
+  word-break: break-word;
+}
+
+.browser-lightbox-meta {
+  margin: 0;
+  padding: 0;
+}
+
+.browser-lightbox-meta-line {
+  margin-bottom: 0.5rem;
+}
+
+.browser-lightbox-meta-label {
+  font-weight: 700;
+  color: #f9fafb;
+}
+
+.browser-lightbox-meta-value strong {
+  font-weight: 700;
+  color: #fff;
+  text-decoration: underline;
+  text-underline-offset: 2px;
+}
+
+.browser-lightbox-empty {
+  color: #9ca3af;
+  font-style: italic;
+}
+
+.browser-lightbox-close {
+  position: absolute;
+  top: 1rem;
+  right: 1rem;
+  z-index: 2;
+  color: #fff;
+  font-size: 1.75rem;
+  line-height: 1;
+  text-decoration: none;
+  padding: 0.25rem 0.5rem;
+}
+
+.browser-lightbox-close:hover {
+  color: #e2e8f0;
+}
+
+/*
+ * Colors
+ */
+.browser-wrap {
+  --browser-yes: #326fa1;
+  --browser-no: #e41a1c;
+  --browser-hq: #c55602;
+  --browser-lq: #6e68a8;
+  --browser-unknown: #374151;
+}
+
+.browser .browser-val-yes {
+  color: var(--browser-yes);
+  font-weight: 600;
+}
+
+.browser .browser-val-no {
+  color: var(--browser-no);
+  font-weight: 600;
+}
+
+.browser .browser-cat-hq {
+  color: var(--browser-hq);
+  font-weight: 600;
+}
+
+.browser .browser-cat-lq {
+  color: var(--browser-lq);
+  font-weight: 600;
+}
+
+.browser .browser-cat-unknown {
+  color: var(--browser-unknown);
+  font-weight: 600;
+}
+
+.dark .browser-wrap,
+html.dark .browser-wrap,
+body.dark .browser-wrap,
+[data-theme="dark"] .browser-wrap {
+  --browser-yes: #6db3ea;
+  --browser-no: #ff8a8a;
+  --browser-hq: #ffb86b;
+  --browser-lq: #c4b8f0;
+  --browser-unknown: #d1d5db;
+}
