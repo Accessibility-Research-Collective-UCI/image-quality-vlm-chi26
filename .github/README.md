@@ -15,7 +15,7 @@ This is a companion repo for the paper, _"It's trained by non-disabled people": 
 
 We selected 1,859 product images taken by blind and low-vision (BLV) people from the [VizWiz](https://vizwiz.cs.colorado.edu/) dataset, including 729 high-quality images (without any image quality issues) and 1,130 low-quality images (with at least one image quality issue). Each image was annotated with product, brand, and variety information. For more details, please refer to our [paper](https://arxiv.org/abs/2511.08917) (see Section 4.2).
 
-`data/` includes our annotated dataset as `.csv` and `.json`. Dataset details are available below. Original fields are derived from the [VizWiz](https://vizwiz.cs.colorado.edu/) dataset ([Gurari et al., ECCV 2020](https://vizwiz.org/tasks-and-datasets/image-captioning/), [Chiu et al., CVPR 2020](https://vizwiz.org/tasks-and-datasets/image-quality-issues/)).
+`data/` includes our annotated dataset in `.csv` and `.json`. Dataset details are available below. Original fields are derived from the [VizWiz](https://vizwiz.cs.colorado.edu/) dataset ([Gurari et al., ECCV 2020](https://vizwiz.org/tasks-and-datasets/image-captioning/), [Chiu et al., CVPR 2020](https://vizwiz.org/tasks-and-datasets/image-quality-issues/)).
 
 <details>
 <summary><strong><code>JSON</code> Data Fields & Types</strong> (click to expand)</summary>
@@ -96,7 +96,7 @@ We selected 1,859 product images taken by blind and low-vision (BLV) people from
 
 </details>
 
-## Dataset Browswer
+## Dataset Browser
 
 ### Prerequisites
 
